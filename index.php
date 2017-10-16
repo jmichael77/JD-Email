@@ -1,0 +1,1 @@
+<?php include_once("jd_responsive.html") ?>

@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>JD TEMPLATE</title>
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 0;
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.ReadMsgBody {
+	width: 100%;
+}
+.ExternalClass {
+	width: 100%;
+}
+.ExternalClass * {
+	line-height: normal;
+}
+div, p, a, li, td {
+	-webkit-text-size-adjust: none;
+}
+img {
+	outline: none;
+	text-decoration: none;
+	-ms-interpolation-mode: bicubic;
+	display: block;
+}
+a img {
+	border: none;
+}
+.outer {
+	width: 100%;
+}
+.wrapper {
+	width: 650px;/*600px is default change if applicable*/
+}
+.mobileshow {
+	display: none;
+	width: 0px;
+	max-height: 0px;
+	overflow: hidden;
+}
+.drop {
+	padding: 15px;/*10px is default change if applicable*/
+}
+.tab {
+	width: 200px;/*200px is default change if applicable*/
+}
+.padding5 {
+	padding: 5px;
+}
+.padding10 {
+	padding: 10px;
+}
+.padding15 {
+	padding: 15px;
+}
+.heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000001;
+}
+.heading a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000001;
+}
+.heading2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+}
+.heading2 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: underline;
+}
+.bodytext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #3f3f3f;
+}
+.bodytext a {
+	color: rgb(215, 25, 33);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+.bodytext2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+.bodytext2 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+	text-decoration: underline;
+}
+</style>
+<style id="mobile">
+@media only screen and (max-width : 650px ) {
+body[id=yahoo] table.wrapper {
+	width: 100% !important;
+}
+body[id=yahoo] table.hide {
+	display: none !important;
+	overflow: hidden !important;
+	width: 0 !important;
+	height: 0 !important;
+	visibility: hidden !important;
+}
+body[id=yahoo] td.hide {
+	display: none !important;
+	overflow: hidden !important;
+	width: 0 !important;
+	height: 0 !important;
+	visibility: hidden !important;
+}
+body[id=yahoo] img.hide {
+	display: none !important;
+	width: 0 !important;
+	height: 0 !important;
+	visibility: hidden !important;
+}
+body[id=yahoo] td.drop {
+	display: block !important;
+	width: inherit !important;
+}
+body[id=yahoo] table.drop {
+	display: block !important;
+	width: inherit !important;
+}
+body[id=yahoo] .mobileshow {
+	display: block !important;
+	margin: 0;
+	padding: 0;
+	overflow : visible !important;
+	width: auto !important;
+	max-height: inherit !important;
+}
+body[id=yahoo] .mobileshow table {
+	display: table !important;
+	margin: 0;
+	padding: 0;
+	overflow : visible !important;
+	width: 100% !important;
+	max-height: inherit !important;
+}
+body[id=yahoo] .mobileshow img {
+	display: block !important;
+	margin: 0;
+	padding: 0;
+	overflow : visible !important;
+	width: 100% !important;
+	max-height: inherit !important;
+}
+body[id=yahoo] table.tab {
+	width: 100% !important;
+}
+body[id=yahoo] .fluidimage {
+	width: 100% !important;
+	height: auto !important;
+}
+body[id=yahoo] .heading {
+	font-size: 20px !important;
+}
+body[id=yahoo] .heading a {
+	font-size: 20px !important;
+}
+body[id=yahoo] .heading2 {
+	font-size: 20px !important;
+}
+body[id=yahoo] .heading2 a {
+	font-size: 20px !important;
+}
+body[id=yahoo] .bodytext {
+	font-size: 16px !important;
+}
+body[id=yahoo] .bodytext a {
+	font-size: 16px !important;
+}
+body[id=yahoo] .bodytext2 {
+	font-size: 16px !important;
+}
+body[id=yahoo] .bodytext2 a {
+	font-size: 16px !important;
+}
+body[id=yahoo] .smalltext {
+	font-size: 14px !important;
+}
+body[id=yahoo] .smalltext a {
+	font-size: 14px !important;
+}
+.customimg {
+	width: 30px !important;
+	height: 30px!important;
+}
+}
+</style>
+<style title="Additional-styles">
+.smalltext {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+
+.smalltext a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+.navbar-links {
+	color: white;
+	font-family: sans-serif;
+}
+td {
+		font-family: sans-serif;
+}
+a, a:visited{
+		color: white;
+}
+</style>
+</head>
+
+<body id="yahoo" style="background-color:#eeeeee">
+
+<!-- Email Container -->
+<table class="outer" border="0" cellpadding="0" cellspacing="0" bgcolor="#eeeeee">
+  <tr>
+    <td>
+     
+     <!-- View in Browser -->
+      <table class="wrapper" align="center" bgcolor="37AD90">
+        <tr>
+          <td class="smalltext drop" style="text-align: center; color: white; padding: 5px;"> Can't View This Email Properly? 
+          	<a href="" target="_blank">View in Browser</a>
+          </td>
+        </tr>
+      </table>
+      
+      <!-- Space -->
+      <table class="hide">
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+      
+    <!-- Banners --> 
+      
+      
+      <!-- Banner 1 -->
+      <table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+          	<img class="fluidimage" style="display: block;" alt="" src="banner-1.jpg">
+          </td>
+        </tr>
+      </table>
+      
+      <!-- Banner 2 -->
+      <table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+          	<img class="fluidimage" style="display: block;" alt="" src="banner-2.jpg">
+          </td>
+        </tr>
+      </table>
+      
+      <!-- Banner 2 -->
+      <table align="center" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td>
+          	<img class="fluidimage" style="display: block;" alt="" src="banner-3.jpg">
+          </td>
+        </tr>
+      </table>
+      
+    <!-- Banners --> 
+      
+      
+      <!-- Body -->
+      <table style="font-family: sans-serif; background-color: white;" class="wrapper" align="center" bgcolor="FFFFFF" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td>
+           
+           <!-- Navbar -->
+            <table align="center" class="navbar-links wrapper" bgcolor="231f20">
+              <tr>
+                <td align="center" class="drop" style="padding: 14px;">
+                	<a style="color: white; text-decoration: none; font-weight: bold; padding: 10px;" href="#">Men</a>
+                </td>
+                <td class="drop" align="center">
+                	<a style="color: white;text-decoration: none; font-weight: bold; padding: 10px;" href="#">Women</a>
+                </td>
+                <td class="drop" align="center">
+                	<a style="color: white;text-decoration: none; font-weight: bold; padding: 10px;" href="#">Kids</a>
+                </td>
+                <td class="drop" align="center">
+                	<a style="color: white;text-decoration: none; font-weight: bold; padding: 10px;" href="#">Sports</a>
+                </td>
+                <td class="drop" align="center">
+                	<a style="color: white;text-decoration: none; font-weight: bold; padding: 10px;" href="#">Football</a>
+                </td>
+                <td class="drop" align="center">
+                	<a style="color: white;text-decoration: none; font-weight: bold; padding: 10px;" href="#">Clearance</a>
+                </td>
+              </tr>
+            </table> <!-- Navbar --> 
+            
+            
+            <!-- Trainer 1-->
+            <table bgcolor="FFFFFF" align="center" class="wrapper">
+              <tr>
+                <td class="drop">
+                  <span style="font-size: 20px; font-weight: bold;" >Air Max 90 Super Powers</span> 
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint sunt nisi ratione. Minus illo delectus eos quo mollitia necessitatibus in, distinctio maxime, ipsam deleniti aliquam assumenda minima atque tempora? 
+                </td>
+                <td align="center" class="drop">
+                	<img src="trainer-1.png" alt="Air Max">
+                </td>
+                <td height="250"></td>
+              </tr>
+            </table> <!-- Trainer 1--> 
+            
+            
+            <!-- Trainer 2-->
+            <table bgcolor="FFFFFF" align="center" class="wrapper">
+              <tr>
+                <td class="drop">
+                  <span style="font-size: 20px; font-weight: bold;">Air Max 90 Dark &amp; Gloomy</span> 
+                  <br>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint sunt nisi ratione. Minus illo delectus eos quo mollitia necessitatibus in, distinctio maxime, ipsam deleniti aliquam assumenda minima atque tempora? 
+                </td>
+                <td align="center" class="drop">
+                	<img width="235" src="trainer-2.png" alt="Air Max">
+                </td>
+                <td height="250" width="12"></td>
+              </tr>
+            </table> <!-- Trainer 2--> 
+            
+            
+            <!-- Box's 2 Column -->
+            <table bgcolor="FFFFFF" class="wrapper" align="center" cellpadding="0" cellspacing="0" border="0">
+             
+              <tr>
+                <td bgcolor="FFFFFF">&nbsp;</td>
+                <td bgcolor="FFFFFF">&nbsp;</td>
+              </tr>
+              
+              <tr> 
+                <!-- Box 1 -->
+                <td bgcolor="FFFFFF" class="drop">
+                  <table style="border-width: 1px; border: 1px solid #CCCCCC; text-align: center; padding: 20px">
+                    <tr>
+                      <td>
+                       	<strong>LOREM IPSUM</strong> 
+                       	<br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aut placeat perspiciatis facere doloremque optio esse amet sint tempora tempore harum aperiam, quas molestiae velit iure quisquam, saepe officia rerum! 
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <!-- Box 1 -->
+                <td bgcolor="FFFFFF" class="drop">
+                  <table style="border-width: 1px; padding: 10px; border: 1px solid #CCCCCC; text-align: center; padding: 20px">
+                    <tr>
+                      <td>
+                       	<strong>LOREM IPSUM</strong> 
+                       	<br>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique aut placeat perspiciatis facere doloremque optio esse amet sint tempora tempore harum aperiam, quas molestiae velit iure quisquam, saepe officia rerum! 
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              
+              <tr>
+                <td height="30">&nbsp;</td>
+                <td height="30">&nbsp;</td>
+              </tr>
+              
+            </table> <!-- Box's 2 Column -->
+            
+          </td>
+        </tr>
+      </table> <!-- Body --> 
+      
+      
+      <!-- Register Now -->
+      <table align="center" class="wrapper" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td bgcolor="231f20" height="150" width="100%">
+            <table align="center" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td bgcolor="37AD90" style="padding: 12px 40px 12px 40px; -webkit-border-radius:3px; border-radius:3px" align="center">
+                	<a href="#" target="_blank" style="font-size: 18px; font-family: Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; text-decoration: none; display: inline-block;">Register Now &#9794;</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      
+      
+      <!-- Footer -->
+      <table style="padding-top: 10px; padding-bottom: 10px; font-family: sans-serif;" class="wrapper" align="center" cellpadding="0" cellspacing="0" border="0">
+        <!-- Disclaimer -->
+        <tr>
+          <td width="10"></td>
+          <td style="color: #2B2D42; font-size: 11px;"> 
+          	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint sunt nisi ratione. Minus illo delectus eos quo mollitia necessitatibus in, distinctio maxime, ipsam deleniti aliquam assumenda minima atque tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo reprehenderit laboriosam aut, culpa distinctio suscipit dolore qui labore veniam molestias inventore molestiae eveniet animi quisquam tempora sit provident velit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint sunt nisi ratione. Minus illo delectus eos quo mollitia necessitatibus in, distinctio maxime, ipsam deleniti aliquam assumenda minima atque tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo reprehenderit laboriosam aut, culpa distinctio suscipit dolore qui labore veniam molestias inventore molestiae eveniet animi quisquam tempora sit provident velit asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint sunt nisi ratione. Minus illo delectus eos quo mollitia necessitatibus in, distinctio maxime, ipsam deleniti aliquam assumenda minima atque tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo reprehenderit laboriosam aut, culpa distinctio suscipit dolore qui labore veniam molestias inventore molestiae eveniet animi quisquam tempora sit provident velit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sint sunt nisi ratione. Minus illo delectus eos quo mollitia necessitatibus in, distinctio maxime, ipsam deleniti aliquam assumenda minima atque tempora? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo reprehenderit laboriosam aut, culpa distinctio suscipit dolore qui labore veniam molestias inventore molestiae eveniet animi quisquam tempora sit provident velit. 
+          	<br>
+          	<span>Want to stop receiving emails? 
+          		<a href="#" target="_blank" style="color: black; text-decoration: underline;">unsubscribe</a>
+          	</span>
+          </td>
+          <td width="10"></td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table> <!-- Email Container -->
+
+</body>
+</html>
